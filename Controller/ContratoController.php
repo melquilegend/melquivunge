@@ -7,6 +7,7 @@ class ContratoController {
         // Lógica para obter os dados dos contratos do modelo (Contrato) e passá-los para a visualização (contratos.php)
         $contratoModel = new Contrato();
         $contratos = $contratoModel->listarRelacaoContratos();
+        $camposAgrupados = $contratoModel->campos_agrupados();
 
         include 'View/contratos.php';
     }

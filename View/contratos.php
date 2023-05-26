@@ -30,5 +30,29 @@
     <?php else: ?>
         <p>Não há contratos para exibir.</p>
     <?php endif; ?>
+    <h1>campos agrupados</h1>
+    <table>
+  <thead>
+    <tr>
+      <th>Nome do Banco</th>
+      <th>Verba</th>
+      <th>Data de Inclusão Mais Antiga</th>
+      <th>Data de Inclusão Mais Recente</th>
+      <th>Soma do Valor dos Contratos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($camposAgrupados as $contrato): ?>
+      <tr>
+        <td><?php echo $contrato['nome_banco']; ?></td>
+        <td><?php echo $contrato['verba']; ?></td>
+        <td><?php echo $contrato['data_inclusao_minima']; ?></td>
+        <td><?php echo $contrato['data_inclusao_maxima']; ?></td>
+        <td><?php echo $contrato['soma_valor_contratos']; ?></td>
+      </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>
+
 
 <?php include 'includes/footer.php'; ?>
