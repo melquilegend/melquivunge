@@ -38,10 +38,6 @@ Certifique-se de que o servidor web esteja em execução e o PHP esteja corretam
 
 Se você deseja contribuir para este projeto, fique à vontade para enviar pull requests ou relatar problemas encontrados.
 
-## Licença
-
-Este projeto é licenciado sob a [MIT License](LICENSE).
-
 ## Desenvolvedor
 Melqui Vunge
 <a href="https://github.com/melquilegend/melquivunge">
